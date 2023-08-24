@@ -21,27 +21,18 @@
       <h2>Summary</h2>
     </div>
 
-    <section id="projects">
-      <nav id="projects-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-      </nav>
-    </section>
-    <section id="about">
-      <nav id="about-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-      </nav>
-    </section>
-    <section id="skills">
-      <nav id="skills-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-      </nav>
-    </section>
+    <nav id="projects-nav">
+      <a href="#projects" class="open">Projects</a>
+      <a href="#about" class="closed">About Me</a>
+      <a href="#skills" class="closed">Skills</a>
+    </nav>
+
+    <div id="container">
+      <section class="back" id="projects"></section>
+      <section class="back" id="about"></section>
+      <section class="back" id="skills"></section>
+      <section class="front" id="cover"></section>
+    </div>
   </main>
 
 </body>
