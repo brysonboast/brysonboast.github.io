@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Hello, world!</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="style.css"
-  <script src="index.js" defer></script>
-</head>
-<body>
-  <main>
-    <h1>
-      Hi, 
-      <br>
-      &emsp;
-      I'm Bryson.
-    </h1>
-    <div id="summary">
-      <h2>Summary</h2>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio Bryson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Portfolio Website to display projects" />
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&family=Libre+Franklin:wght@100&family=Roboto:wght@100&family=Stylish&display=swap" rel="stylesheet">
+    <script src="/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <a href="#home" class="curPos">Home</a>
+          <a href="#about" >About</a>
+          <a href="#work" >Work</a>
+          <a href="#contact" >Contact</a>
+        </nav> 
+      </header>
+      <div id="home">
+        <div id="welcome">
+          <div id="name">
+            <h1>
+              Hi there,
+              <br>
+              my name is Bryson
+            </h1>
+          </div>
+          <div id="summary">
+            <p>
+              This is a place to store my projects and showcase all of the work I've been able to accomplish. I hope you enjoy.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <nav id="projects-nav">
-      <a href="#projects" class="open">Projects</a>
-      <a href="#about" class="closed">About Me</a>
-      <a href="#skills" class="closed">Skills</a>
-    </nav>
+      <div id="about">
+        <h2>About</h2>
+      </div>
 
-    <div id="container">
-      <section class="back" id="projects"></section>
-      <section class="back" id="about"></section>
-      <section class="back" id="skills"></section>
-      <section class="front" id="cover"></section>
-    </div>
-  </main>
+      <div id="work">
+        <h2>Work</h2>
+      </div>
 
-</body>
+      <div id="contact">
+        <h2>Contact</h2>
+      </div>
+    </main>
+  </body>
 </html>
