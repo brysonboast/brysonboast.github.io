@@ -1,16 +1,15 @@
+const aElements = document.getElementsByTagName("a");
 
-const aElements = document.getElementsByClassName('tag');
+for (aEl of aElements) {
+    aEl.addEventListener('click', function(event) {
+        removeClasses();
+        event.target.className = 'curPos';
+    }
+    )}
 
-const resetClasses = function() {
-    for (el of aElements) {
-        el.className = 'closed tag';
+
+function removeClasses() {
+    for (aEl of aElements) {
+        aEl.className = '';
     }
 }
-
-for (el of aElements) {
-    el.addEventListener('click', (event) => {
-        resetClasses();
-        event.target.className = 'open tag';
-    })
-}
-

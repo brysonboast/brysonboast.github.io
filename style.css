@@ -1,74 +1,86 @@
 body {
     font-size: 16px;
+    font-family: 'Stylish', sans-serif;
+    color: rgb(5, 30, 44);
+    margin: 0;
+    background-color: rgb(255, 243, 243);
 }
 
 
-
-section.back, section.front {
-    height: 40rem;
-    width: 80%;
-    background-color: #f1d592;
-    border: 2px solid #d9b45d;
-    margin: auto;
-    border-radius: 10px;
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color:rgb(5, 30, 44);
+    padding: 0 20px;
+    border: 2px solid rgb(255, 243, 243);
+    border-radius: 5px;
 }
 
-section.paper {
-    position: relative;
-    top: -37.5rem;
-    background-color: white;
-    height: 35rem;
-    width: 75%;
-    margin: auto;
-}
-
-section.front {
-    transform: skewX(5deg) scaleY(0.9) translateX(-1.75rem) translateY(2rem);
-    position: relative;
-    top: -75rem;
-}
-
-#about {
-    display: none;
-}
-
-#skills {
-    display: none;
-}
-
-#summary {
-    width: 90%;
-    text-align: center;
+a.curPos {
+    background-color: lightsteelblue;
 }
 
 nav {
-position: relative;
-left: 15%;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #f1d592;
-    border: 2px solid #d9b45d;
-    border-bottom: none;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 2rem;
-    text-align: center;
-    color: black;
-    cursor: pointer;
-}
-
-.open {
-    position: relative;
-    top: 2px;
-    height: 2.5rem;
+    width: 100%;
+    background-color: rgb(255, 243, 243);
+    position: fixed;
+    top: 0;
     z-index: 10;
+    padding: 10px 20px;
 }
 
-.closed {
-    z-index: 1;
+#home {
+    height: 40rem;
+    background-image: url('water.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
+#welcome {
+    position: relative;
+    top: 5rem;
+    text-align: left;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+#name {
+    width: 50%;
+    background-color:rgb(130, 146, 165);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#summary {
+    width: 50%;
+    background-color: rgb(130, 146, 165);
+    border-radius: 5px;
+}
+
+p {
+    text-align: left;
+    padding: 0 20px;
+}
+
+#home, #about, #work, #contact {
+    position: relative;
+    top: 4rem;
+}
+#about, #work, #contact {
+    height: 20rem;
+}
+
+h2 {
+    padding: 20px;
+}
