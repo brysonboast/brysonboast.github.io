@@ -1,0 +1,10 @@
+section {
+    height: 500px;
+    width: 90%;
+}
+
+#summary {
+    height: 500px;
+    width: 90%;
+    text-align: center;
+}
