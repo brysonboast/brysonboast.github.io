@@ -1,15 +1,20 @@
-const aElements = document.getElementsByTagName("a");
+const sections = []
+sections.push(document.getElementById('home'))
+sections.push(document.getElementById('about'))
+sections.push(document.getElementById('work'))
+sections.push(document.getElementById('contact'))
 
-for (aEl of aElements) {
-    aEl.addEventListener('click', function(event) {
+const aElements = document.getElementById('links').children;
+
+for (let section of sections) {
+    section.addEventListener('mouseover', function(event) {
         removeClasses();
-        event.target.className = 'curPos';
+        
     }
     )}
 
-
 function removeClasses() {
-    for (aEl of aElements) {
+    for (let aEl of aElements) {
         aEl.className = '';
     }
 }

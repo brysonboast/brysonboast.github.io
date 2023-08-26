@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300&family=Libre+Franklin:wght@100&family=Roboto:wght@100&family=Stylish&display=swap" rel="stylesheet">
     <script src="/index.js" defer></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <main>
       <header>
-        <nav>
+        <nav id="links" class="navbar">
           <a href="#home" class="curPos">Home</a>
           <a href="#about" >About</a>
           <a href="#work" >Work</a>
@@ -23,10 +23,13 @@
       <div id="home">
         <div id="welcome">
           <div id="name">
-            <h1>
+            <h1 id="desktop">
               Hi there,
               <br>
               my name is Bryson
+            </h1>
+            <h1 id="mobile">
+              Hi, I'm Bryson
             </h1>
           </div>
           <div id="summary">
@@ -39,14 +42,27 @@
 
       <div id="about">
         <h2>About</h2>
+        <p>I am a recent college graduate with a degree in Mathematics and a minor in Computer Science. I am passionate about code and finding new ways to solve problems. I aspire to work as a developer one day so that I might be able to use my technical skills and social skills to improve my life and the lives of those around me. Outside of code, I am an aivd sports enthusiast and spend most of time outdoors, either playing golf or basketball.</p>
       </div>
 
       <div id="work">
         <h2>Work</h2>
+        <div id="projects">
+          <a href="Swalty/index.html" target="_blank">Swalty Sisters</a>
+        </div>
       </div>
 
       <div id="contact">
         <h2>Contact</h2>
+        <div id="info">
+          <img src="me.jpeg" alt="Image of Bryson Boast."/>
+          <div id="contacts">
+            <a href="https://www.linkedin.com/in/bryson-boast-867886231">LinkedIn</a>
+            <a href="https://github.com/brysonboast?tab=repositories">GitHub</a>
+            <a href="mailto: bryson.boast@gmail.com">Email</a>
+            <a href="tel: 4077192995">Phone</a>
+          </div>
+        </div>
       </div>
     </main>
   </body>

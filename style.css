@@ -12,11 +12,10 @@ nav a {
     font-size: 2rem;
     color:rgb(5, 30, 44);
     padding: 0 20px;
-    border: 2px solid rgb(255, 243, 243);
     border-radius: 5px;
 }
 
-a.curPos {
+a.active {
     background-color: lightsteelblue;
 }
 
@@ -27,6 +26,7 @@ nav {
     top: 0;
     z-index: 10;
     padding: 10px 20px;
+    border-bottom: 2px solid rgb(5, 30, 44);
 }
 
 #home {
@@ -42,7 +42,7 @@ nav {
     position: relative;
     top: 5rem;
     text-align: left;
-    width: 70%;
+    width: 50%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -56,14 +56,16 @@ nav {
 }
 
 #name {
-    width: 50%;
     background-color:rgb(130, 146, 165);
     border-radius: 5px;
     margin: 20px 0;
 }
 
+#mobile {
+    display: none;
+}
+
 #summary {
-    width: 50%;
     background-color: rgb(130, 146, 165);
     border-radius: 5px;
 }
@@ -75,12 +77,57 @@ p {
 
 #home, #about, #work, #contact {
     position: relative;
-    top: 4rem;
+    top: 3rem;
 }
-#about, #work, #contact {
-    height: 20rem;
+
+#about p {
+    width: 70%;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+    #projects, #info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about p {
+        text-align: center;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
 }
 
 h2 {
     padding: 20px;
+}
+
+#info {
+    display: flex;
+}
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacts a, #projects a {
+    text-decoration: none;
+    font-size: 2rem;
+    color:rgb(5, 30, 44);
+    padding: 0 20px;
+    border-radius: 5px;
 }
